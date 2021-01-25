@@ -46,7 +46,7 @@ public class MemberServlet extends HttpServlet {
 		List list = dao.listMembers();
 		out.print("<html><body>");
 		out.print("<table border=1><tr align='center' bgcolor='lightgreen'>");
-		out.print("<td>아이디</td><td>비밀번호</td><td>이름</td><td>이메일</td><td>가입일</td><td >삭제</td></tr>");
+		out.print("<td>아이디</td><td>비밀번호</td><td>이름</td><td>이메일</td><td>가입일</td><td>삭제</td></tr>");
 
 		for (int i = 0; i < list.size(); i++) {
 			MemberVO memberVO = (MemberVO) list.get(i);
@@ -59,6 +59,6 @@ public class MemberServlet extends HttpServlet {
 					+ "</td><td>" + "<a href='/pro07/member3?command=delMember&id=" + id + "'>삭제 </a></td></tr>");
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/pro07/memberForm.html'>새 회원 등록하기</a");
+		out.print("<a href='/pro07/memberForm.html'>새 회원 등록하기</a>");
 	}
 }
