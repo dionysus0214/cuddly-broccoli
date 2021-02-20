@@ -10,7 +10,7 @@
 			$("#checkJson")
 				.click(
 						function() {
-							var jsonStr = '{"members":[{"name":"라이언", "age":"12","gender":"남자", "nickname":"갈기없는숫사자"}'
+							var jsonStr = '{"members":[{"name":"라이언", "age":"12","gender":"남자", "nickname":"라이라이라이언"}'
 									+ ', {"name":"어피치", "age":"10", "gender":"여자", "nickname":"피치피치어피치"}] }';
 							var jsonInfo = JSON.parse(jsonStr);
 							var output = "회원 정보<br>";
